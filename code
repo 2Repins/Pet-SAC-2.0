@@ -1,2 +1,11 @@
 'code starts here
-LOCK IN!!!!
+'LOCK IN!!!!
+dim prob as decimal = 0.01
+increment as decimal = 0.01
+dim sr_prob as decimal = 0.09
+dim r_prob as decimal = 0.2
+dim norm_prob as decimal = 1 - (current_ssr_prob + sr_prob + r_prob)
+
+function draw()
+    dim rand as double = new random().nextdouble()
+    
